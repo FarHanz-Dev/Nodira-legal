@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kebijakan Privasi — Nodira</title>
+<style>
+  :root{--bg:#fff;--fg:#1a1a1a;--muted:#5c5c5c;--line:#e4e4e7;--accent:#0090c0;--card:#f7f8fa}
+  @media (prefers-color-scheme:dark){:root{--bg:#111214;--fg:#ececf0;--muted:#a1a1aa;--line:#2a2b30;--accent:#38c6f4;--card:#191a1e}}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;padding:0 20px 80px}
+  .wrap{max-width:760px;margin:0 auto}
+  header{padding:48px 0 24px;border-bottom:1px solid var(--line);margin-bottom:32px}
+  h1{font-size:28px;margin:0 0 8px;letter-spacing:-.02em}
+  h2{font-size:20px;margin:40px 0 12px;letter-spacing:-.01em}
+  h3{font-size:16px;margin:24px 0 8px}
+  .meta{color:var(--muted);font-size:14px;margin:0}
+  .lang{margin:16px 0 0;font-size:14px}
+  .lang a{color:var(--accent);text-decoration:none;font-weight:600}
+  table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px;display:block;overflow-x:auto}
+  th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+  th{background:var(--card);font-weight:600}
+  code{background:var(--card);padding:1px 5px;border-radius:4px;font-size:.9em}
+  .box{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--accent);padding:14px 16px;border-radius:6px;margin:20px 0}
+  ul{padding-left:22px}
+  li{margin:6px 0}
+  a{color:var(--accent)}
+  hr{border:0;border-top:1px solid var(--line);margin:56px 0}
+  footer{color:var(--muted);font-size:13px;margin-top:48px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>Kebijakan Privasi — Nodira</h1>
+  <p class="meta">Berlaku sejak: 25 Agustus 2026 · Versi kebijakan: 2.0</p>
+  <p class="meta">Aplikasi: Nodira (<code>com.nodira.app</code>) · Kontak: <a href="mailto:arileif.soft@gmail.com">arileif.soft@gmail.com</a></p>
+  <p class="lang"><a href="#english">Read in English ↓</a></p>
+</header>
+
+<div class="box">
+  <strong>Ringkasnya:</strong> Nodira adalah pencatat keuangan pribadi yang bekerja
+  <em>offline</em>. Seluruh catatan keuanganmu — transaksi, anggaran, saldo, portofolio —
+  disimpan hanya di perangkatmu sendiri dan <strong>tidak pernah dikirim ke server kami
+  atau siapa pun</strong>. Kami tidak menampilkan iklan, tidak memakai layanan analitik,
+  dan tidak menjual data kepada siapa pun.
+</div>
+
+<h2>1. Data yang TIDAK kami kumpulkan</h2>
+<p>Berikut ini tidak pernah meninggalkan perangkatmu:</p>
+<ul>
+  <li>Seluruh catatan keuangan: transaksi, kategori, anggaran, saldo, nama buku kas
+      (<em>ledger</em>), komposisi kas, portofolio investasi, hutang &amp; piutang.</li>
+  <li>Berkas cadangan (<em>backup</em>) beserta kata sandinya.</li>
+  <li>PIN aplikasi dan data biometrik. Biometrik diverifikasi oleh sistem operasi;
+      aplikasi hanya menerima jawaban berhasil/gagal.</li>
+  <li>Lokasi, kontak, foto, kalender, SMS, dan riwayat panggilan — aplikasi tidak pernah
+      meminta izin untuk itu sama sekali.</li>
+</ul>
+
+<h2>2. Izin yang diminta aplikasi</h2>
+<table>
+  <tr><th>Izin</th><th>Untuk apa</th></tr>
+  <tr><td><code>INTERNET</code></td><td>Masuk dengan Google (opsional), pembelian lewat Google Play, dan mengecek status premium.</td></tr>
+  <tr><td><code>POST_NOTIFICATIONS</code></td><td>Pengingat lokal yang kamu atur sendiri (pengingat catat, kabar anggaran).</td></tr>
+  <tr><td><code>RECEIVE_BOOT_COMPLETED</code></td><td>Memasang ulang pengingat lokal setelah perangkat dinyalakan ulang.</td></tr>
+  <tr><td><code>USE_BIOMETRIC</code> / <code>USE_FINGERPRINT</code></td><td>Membuka kunci aplikasi dengan sidik jari/wajah.</td></tr>
+</table>
+<p>Notifikasi dijadwalkan dan dikirim <strong>di dalam perangkat</strong>. Tidak ada
+   <em>push</em> dari server kami.</p>
+
+<h2>3. Data yang dikumpulkan — hanya jika kamu masuk dengan Google</h2>
+<p>Masuk dengan akun Google bersifat <strong>opsional</strong>. Seluruh fitur pencatatan
+   dapat dipakai tanpa akun. Akun hanya dibutuhkan untuk membeli Nodira Premium dan
+   memulihkan pembelian di perangkat baru.</p>
+<p>Jika — dan hanya jika — kamu masuk, data berikut disimpan di Google Firebase
+   (Firestore, dokumen <code>users/{uid}</code>):</p>
+<table>
+  <tr><th>Data</th><th>Tujuan</th></tr>
+  <tr><td>Alamat email</td><td>Mengenali akunmu, menghubungimu soal pembelian.</td></tr>
+  <tr><td>Nama tampilan akun Google</td><td>Mengenali akunmu.</td></tr>
+  <tr><td>Pilihan persetujuanmu (notifikasi, masukan, email) beserta versi &amp; waktunya</td><td>Menghormati pilihanmu dan menyimpan jejak kapan kamu menyetujuinya.</td></tr>
+  <tr><td>Status premium: aktif/tidak, jenis paket, nomor <em>founding member</em> bila ada</td><td>Membuka fitur premium di perangkat mana pun yang kamu pakai.</td></tr>
+  <tr><td>Waktu akun dibuat &amp; terakhir aktif</td><td>Pemeliharaan akun.</td></tr>
+</table>
+<p><strong>Tidak ada satu pun angka keuangan yang ikut.</strong> Yang tersimpan di sana
+   hanya identitas akun, persetujuan, dan status pembelian.</p>
+
+<h2>4. Pembelian</h2>
+<p>Pembelian diproses sepenuhnya oleh <strong>Google Play Billing</strong>. Kami tidak
+   pernah menerima, melihat, atau menyimpan nomor kartu maupun data pembayaranmu.
+   Aplikasi hanya menerima tanda dari Google Play bahwa sebuah pembelian sah.</p>
+
+<h2>5. Iklan &amp; analitik</h2>
+<p>Nodira <strong>tidak memuat iklan</strong> dan <strong>tidak memakai SDK analitik
+   maupun pelaporan kerusakan</strong> (tidak ada Google Analytics, Firebase Analytics,
+   Crashlytics, atau sejenisnya). Kami tidak melacak perilakumu di dalam aplikasi.</p>
+
+<h2>6. Berbagi data dengan pihak ketiga</h2>
+<p>Kami <strong>tidak menjual dan tidak membagikan</strong> datamu kepada pihak ketiga
+   untuk tujuan pemasaran. Penyedia layanan yang terlibat hanya:</p>
+<ul>
+  <li><strong>Google Firebase (Authentication &amp; Firestore)</strong> — menyimpan data di
+      §3 sebagai pemroses data atas nama kami.</li>
+  <li><strong>Google Play Billing</strong> — memproses pembelian.</li>
+</ul>
+<p>Keduanya tunduk pada <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Kebijakan Privasi Google</a>.</p>
+
+<h2>7. Keamanan</h2>
+<ul>
+  <li>Data di perangkat dapat dikunci dengan <strong>PIN dan biometrik</strong>.</li>
+  <li>Berkas cadangan dienkripsi dengan <strong>AES-256-GCM</strong>, kuncinya diturunkan
+      dari kata sandimu memakai <strong>PBKDF2 200.000 iterasi</strong>.
+      <strong>Kami tidak menyimpan kata sandi itu dan tidak memiliki cara memulihkannya.</strong>
+      Jika kamu lupa, berkas cadangan itu tidak dapat dibuka oleh siapa pun — termasuk kami.</li>
+  <li>Data yang dikirim ke Firebase berjalan melalui koneksi terenkripsi (HTTPS/TLS).</li>
+</ul>
+
+<h2>8. Penyimpanan &amp; penghapusan data</h2>
+<ul>
+  <li><strong>Data di perangkat</strong> tersimpan sampai kamu menghapusnya. Aplikasi
+      menyediakan <em>Hapus semua data</em> di Pengaturan, yang mengosongkan seluruh basis
+      data lokal. Menghapus (<em>uninstall</em>) aplikasi juga menghapusnya, kecuali berkas
+      cadangan yang sudah kamu simpan sendiri.</li>
+  <li><strong>Data akun di Firebase</strong> tersimpan selama akunmu ada. Kamu berhak
+      meminta penghapusannya kapan saja.</li>
+</ul>
+<div class="box">
+  <strong>Cara meminta penghapusan akun &amp; data:</strong>
+  lihat <a href="account-deletion.html">halaman Penghapusan Akun</a>, atau kirim email ke
+  <a href="mailto:arileif.soft@gmail.com?subject=Permintaan%20Penghapusan%20Akun%20Nodira">arileif.soft@gmail.com</a>.
+  Permintaan diproses dalam <strong>30 hari</strong>.
+</div>
+
+<h2>9. Hak kamu</h2>
+<p>Kamu berhak mengakses, memperbaiki, dan menghapus data akunmu, serta menarik
+   persetujuan yang pernah kamu berikan. Pilihan persetujuan (notifikasi, masukan, email)
+   dapat diubah kapan saja dari <em>Pengaturan → Privasi</em> di dalam aplikasi, bahkan
+   saat sedang luring. Untuk permintaan lain, hubungi kami lewat email di atas.</p>
+
+<h2>10. Anak-anak</h2>
+<p>Nodira ditujukan untuk pengguna berusia <strong>18 tahun ke atas</strong> dan tidak
+   dirancang untuk anak-anak. Kami tidak dengan sengaja mengumpulkan data dari anak
+   di bawah 13 tahun. Bila kami mengetahui hal itu terjadi, datanya akan kami hapus.</p>
+
+<h2>11. Perubahan kebijakan</h2>
+<p>Bila kebijakan ini berubah secara berarti, versinya dinaikkan dan aplikasi akan
+   menanyakan persetujuanmu kembali saat kamu membukanya. Tanggal berlaku di atas
+   selalu menunjukkan versi terkini.</p>
+
+<h2>12. Kontak</h2>
+<p>Pertanyaan atau permintaan terkait privasi:
+   <a href="mailto:arileif.soft@gmail.com">arileif.soft@gmail.com</a></p>
+
+<hr>
+
+<h1 id="english">Privacy Policy — Nodira</h1>
+<p class="meta">Effective: 25 August 2026 · Policy version: 2.0 · App: Nodira
+   (<code>com.nodira.app</code>) · Contact:
+   <a href="mailto:arileif.soft@gmail.com">arileif.soft@gmail.com</a></p>
+
+<div class="box">
+  <strong>In short:</strong> Nodira is an offline-first personal finance tracker. All of
+  your financial records — transactions, budgets, balances, portfolio — are stored
+  <strong>only on your own device and are never transmitted to us or anyone else</strong>.
+  We serve no ads, use no analytics SDKs, and sell data to no one.
+</div>
+
+<h2>1. Data we never collect</h2>
+<p>The following never leaves your device: all financial records (transactions,
+   categories, budgets, balances, ledger names, cash composition, investment portfolio,
+   debts and receivables); backup files and their passwords; your app PIN and biometric
+   data (biometrics are verified by the operating system — the app only receives a
+   success/failure result); location, contacts, photos, calendar, SMS and call history
+   (the app never requests these permissions at all).</p>
+
+<h2>2. Permissions the app requests</h2>
+<table>
+  <tr><th>Permission</th><th>Why</th></tr>
+  <tr><td><code>INTERNET</code></td><td>Optional Google Sign-In, Google Play purchases, premium status.</td></tr>
+  <tr><td><code>POST_NOTIFICATIONS</code></td><td>Local reminders you configure yourself.</td></tr>
+  <tr><td><code>RECEIVE_BOOT_COMPLETED</code></td><td>Re-arming local reminders after a device restart.</td></tr>
+  <tr><td><code>USE_BIOMETRIC</code> / <code>USE_FINGERPRINT</code></td><td>Unlocking the app with fingerprint/face.</td></tr>
+</table>
+<p>Notifications are scheduled and delivered <strong>on the device</strong>. We operate no
+   push server.</p>
+
+<h2>3. Data collected only if you sign in with Google</h2>
+<p>Signing in is <strong>optional</strong>; every recording feature works without an
+   account. An account is needed only to purchase Nodira Premium and to restore purchases
+   on a new device. If you do sign in, the following is stored in Google Firebase
+   (Firestore, document <code>users/{uid}</code>):</p>
+<table>
+  <tr><th>Data</th><th>Purpose</th></tr>
+  <tr><td>Email address</td><td>Identify your account; contact you about purchases.</td></tr>
+  <tr><td>Google display name</td><td>Identify your account.</td></tr>
+  <tr><td>Your consent choices (notifications, feedback, email) with version and timestamp</td><td>Honour your choices and keep an audit trail.</td></tr>
+  <tr><td>Premium status: active or not, plan type, founding member number if any</td><td>Unlock premium features on any device you use.</td></tr>
+  <tr><td>Account creation and last-active timestamps</td><td>Account maintenance.</td></tr>
+</table>
+<p><strong>No financial figures are included.</strong> Only account identity, consent, and
+   purchase status are stored there.</p>
+
+<h2>4. Purchases</h2>
+<p>Purchases are handled entirely by <strong>Google Play Billing</strong>. We never
+   receive, see, or store your card or payment details — the app only receives a signed
+   confirmation from Google Play that a purchase is valid.</p>
+
+<h2>5. Ads &amp; analytics</h2>
+<p>Nodira contains <strong>no advertising</strong> and uses <strong>no analytics or crash
+   reporting SDKs</strong> (no Google Analytics, Firebase Analytics, Crashlytics, or
+   similar). We do not track your in-app behaviour.</p>
+
+<h2>6. Sharing with third parties</h2>
+<p>We <strong>do not sell or share</strong> your data with third parties for marketing.
+   The only service providers involved are <strong>Google Firebase (Authentication and
+   Firestore)</strong>, which stores the data in §3 as a processor on our behalf, and
+   <strong>Google Play Billing</strong>, which processes purchases. Both are governed by
+   the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google
+   Privacy Policy</a>.</p>
+
+<h2>7. Security</h2>
+<p>On-device data can be locked with a <strong>PIN and biometrics</strong>. Backup files
+   are encrypted with <strong>AES-256-GCM</strong>, with the key derived from your password
+   using <strong>PBKDF2 at 200,000 iterations</strong>. <strong>We do not store that
+   password and have no way to recover it</strong> — if you forget it, that backup file
+   cannot be opened by anyone, including us. Data sent to Firebase travels over encrypted
+   connections (HTTPS/TLS).</p>
+
+<h2>8. Retention &amp; deletion</h2>
+<p>On-device data is kept until you delete it; the app provides <em>Delete all data</em> in
+   Settings, and uninstalling the app also removes it (except backup files you saved
+   yourself). Account data in Firebase is kept for as long as your account exists, and you
+   may request its deletion at any time.</p>
+<div class="box">
+  <strong>To request account and data deletion:</strong> see the
+  <a href="account-deletion.html">Account Deletion page</a>, or email
+  <a href="mailto:arileif.soft@gmail.com?subject=Nodira%20Account%20Deletion%20Request">arileif.soft@gmail.com</a>.
+  Requests are processed within <strong>30 days</strong>.
+</div>
+
+<h2>9. Your rights</h2>
+<p>You may access, correct, and delete your account data, and withdraw any consent you
+   have given. Consent choices (notifications, feedback, email) can be changed at any
+   time from <em>Settings → Privacy</em> inside the app, even while offline. For other
+   requests, contact us at the email above.</p>
+
+<h2>10. Children</h2>
+<p>Nodira is intended for users aged <strong>18 and over</strong> and is not directed to
+   children. We do not knowingly collect data from children under 13; if we learn that we
+   have, we will delete it.</p>
+
+<h2>11. Changes</h2>
+<p>If this policy changes materially, its version is incremented and the app will ask for
+   your consent again when you next open it. The effective date above always reflects the
+   current version.</p>
+
+<h2>12. Contact</h2>
+<p><a href="mailto:arileif.soft@gmail.com">arileif.soft@gmail.com</a></p>
+
+<footer>© 2026 Nodira. Kebijakan ini berlaku untuk aplikasi Android Nodira
+  (<code>com.nodira.app</code>).</footer>
+
+</div>
+</body>
+</html>
