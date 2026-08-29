@@ -153,11 +153,14 @@ html.js article[data-lang]{display:none}
 html.js article[data-lang].is-active{display:block}
 html.js .toc ol[data-lang]{display:none}
 html.js .toc ol[data-lang].is-active{display:block}
+html.js .doc-foot p[data-lang]{display:none}
+html.js .doc-foot p[data-lang].is-active{display:block}
 
 /* ── Cetak: kedua bahasa, tanpa kromo ──────────────────────────────── */
 @media print{
   .topbar,.toc,.skip{display:none !important}
-  html.js article[data-lang]{display:block !important}
+  html.js article[data-lang],
+  html.js .doc-foot p[data-lang]{display:block !important}
   .page{display:block;max-width:none;padding:0}
   .content{max-width:none}
   body{font-size:11pt;color:#000;background:#fff}
@@ -175,7 +178,7 @@ html{scroll-behavior:smooth}
 
 <div class="topbar">
   <div class="topbar-in">
-    <a class="brand" href="index.html"><svg width="17" height="17" viewBox="18 18 72 72" aria-hidden="true"><rect x="18.5" y="18.5" width="71" height="71" rx="15" fill="#fff" stroke="rgba(0,0,0,.14)" stroke-width="1"/><path fill="#00BFFF" d="M46.06,34.45L58.27,48.7L53.12,53.12L46.06,45.18L46.06,73.55L39.15,73.55L39.01,34.59Z"/><path fill="#00DFFF" d="M68.85,34.45L68.99,73.41L61.94,73.55L49.73,59.3L54.88,54.88L61.94,62.82L61.94,34.45Z"/></svg> Nodira</a>
+    <a class="brand" href="index.html"><svg width="30" height="30"  aria-hidden="true"><rect x="18.5" y="18.5" width="71" height="71" rx="15" fill="#fff" stroke="rgba(0,0,0,.14)" stroke-width="1"/><path fill="#00BFFF" d="M46.06,34.45L58.27,48.7L53.12,53.12L46.06,45.18L46.06,73.55L39.15,73.55L39.01,34.59Z"/><path fill="#00DFFF" d="M68.85,34.45L68.99,73.41L61.94,73.55L49.73,59.3L54.88,54.88L61.94,62.82L61.94,34.45Z"/></svg> Nodira</a>
     <nav class="topnav" aria-label="Halaman legal / Legal pages"><a href="privacy-policy.html" aria-current="page">Privacy</a><a href="account-deletion.html">Deletion</a></nav>
     <span class="spacer"></span>
     <div class="langsel" role="group" aria-label="Bahasa / Language">
@@ -449,8 +452,12 @@ html{scroll-behavior:smooth}
 <p><a href="mailto:arileif.soft@gmail.com">arileif.soft@gmail.com</a></p>
 </article>
 
-    <div class="doc-foot">© 2026 Nodira. Kebijakan ini berlaku untuk aplikasi Android Nodira
-  (<code>com.nodira.app</code>).</div>
+    <div class="doc-foot">
+    <p data-lang="id" lang="id">© 2026 Nodira. Kebijakan ini berlaku untuk aplikasi Android Nodira
+  (<code>com.nodira.app</code>).</p>
+    <p data-lang="en" lang="en">© 2026 Nodira. This policy applies to the Nodira Android app
+  (<code>com.nodira.app</code>).</p>
+  </div>
   </main>
 </div>
 
@@ -461,6 +468,7 @@ document.documentElement.classList.add('js');
   var arts=[].slice.call(document.querySelectorAll('article[data-lang]'));
   var tocs=[].slice.call(document.querySelectorAll('.toc ol[data-lang]'));
   var btns=[].slice.call(document.querySelectorAll('.langsel button'));
+  var foots=[].slice.call(document.querySelectorAll('.doc-foot p[data-lang]'));
   if(!arts.length) return;
   var known=arts.map(function(a){return a.getAttribute('data-lang');});
 
@@ -474,6 +482,7 @@ document.documentElement.classList.add('js');
   function apply(lang,persist){
     arts.forEach(function(a){a.classList.toggle('is-active',a.getAttribute('data-lang')===lang);});
     tocs.forEach(function(o){o.classList.toggle('is-active',o.getAttribute('data-lang')===lang);});
+    foots.forEach(function(p){p.classList.toggle('is-active',p.getAttribute('data-lang')===lang);});
     btns.forEach(function(b){b.setAttribute('aria-pressed',String(b.getAttribute('data-set')===lang));});
     document.documentElement.setAttribute('lang',lang);
     if(persist){ try{ localStorage.setItem(KEY,lang); }catch(e){} }
