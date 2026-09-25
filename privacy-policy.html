@@ -197,30 +197,32 @@ html{scroll-behavior:smooth}
       <li><a href="#id-2">2. Izin yang diminta aplikasi</a></li>
       <li><a href="#id-3">3. Pindai struk &amp; catat dengan suara</a></li>
       <li><a href="#id-4">4. Data yang dikumpulkan, hanya jika kamu masuk dengan Google</a></li>
-      <li><a href="#id-5">5. Pembelian</a></li>
-      <li><a href="#id-6">6. Iklan &amp; analitik</a></li>
-      <li><a href="#id-7">7. Berbagi data dengan pihak ketiga</a></li>
-      <li><a href="#id-8">8. Keamanan</a></li>
-      <li><a href="#id-9">9. Penyimpanan &amp; penghapusan data</a></li>
-      <li><a href="#id-10">10. Hak kamu</a></li>
-      <li><a href="#id-11">11. Anak-anak</a></li>
-      <li><a href="#id-12">12. Perubahan kebijakan</a></li>
-      <li><a href="#id-13">13. Kontak</a></li>
+      <li><a href="#id-vault">5. Vault Google Drive (opsional)</a></li>
+      <li><a href="#id-5">6. Pembelian</a></li>
+      <li><a href="#id-6">7. Iklan &amp; analitik</a></li>
+      <li><a href="#id-7">8. Berbagi data dengan pihak ketiga</a></li>
+      <li><a href="#id-8">9. Keamanan</a></li>
+      <li><a href="#id-9">10. Penyimpanan &amp; penghapusan data</a></li>
+      <li><a href="#id-10">11. Hak kamu</a></li>
+      <li><a href="#id-11">12. Anak-anak</a></li>
+      <li><a href="#id-12">13. Perubahan kebijakan</a></li>
+      <li><a href="#id-13">14. Kontak</a></li>
     </ol>
     <ol data-lang="en">
       <li><a href="#en-1">1. Data we never collect</a></li>
       <li><a href="#en-2">2. Permissions the app requests</a></li>
       <li><a href="#en-3">3. Receipt scanning &amp; voice entry</a></li>
       <li><a href="#en-4">4. Data collected only if you sign in with Google</a></li>
-      <li><a href="#en-5">5. Purchases</a></li>
-      <li><a href="#en-6">6. Ads &amp; analytics</a></li>
-      <li><a href="#en-7">7. Sharing with third parties</a></li>
-      <li><a href="#en-8">8. Security</a></li>
-      <li><a href="#en-9">9. Retention &amp; deletion</a></li>
-      <li><a href="#en-10">10. Your rights</a></li>
-      <li><a href="#en-11">11. Children</a></li>
-      <li><a href="#en-12">12. Changes</a></li>
-      <li><a href="#en-13">13. Contact</a></li>
+      <li><a href="#en-vault">5. Google Drive Vault (optional)</a></li>
+      <li><a href="#en-5">6. Purchases</a></li>
+      <li><a href="#en-6">7. Ads &amp; analytics</a></li>
+      <li><a href="#en-7">8. Sharing with third parties</a></li>
+      <li><a href="#en-8">9. Security</a></li>
+      <li><a href="#en-9">10. Retention &amp; deletion</a></li>
+      <li><a href="#en-10">11. Your rights</a></li>
+      <li><a href="#en-11">12. Children</a></li>
+      <li><a href="#en-12">13. Changes</a></li>
+      <li><a href="#en-13">14. Contact</a></li>
     </ol>
   </details>
 
@@ -228,15 +230,18 @@ html{scroll-behavior:smooth}
 <article data-lang="id" lang="id">
   <div class="doc-head">
   <h1>Kebijakan Privasi — Nodira</h1>
-  <p class="meta">Berlaku sejak: 24 September 2026 · Versi kebijakan: 2.1</p>
+  <p class="meta">Berlaku sejak: 25 September 2026 · Versi kebijakan: 2.2</p>
   <p class="meta">Aplikasi: Nodira (<code>com.nodira.app</code>) · Kontak: <a href="mailto:arileif.soft@gmail.com">arileif.soft@gmail.com</a></p>
   </div>
 <p class="lang"><a href="#english">Read in English ↓</a></p>
 <div class="box">
   <strong>Ringkasnya:</strong> Nodira adalah pencatat keuangan pribadi yang bekerja
   <em>offline</em>. Seluruh catatan keuanganmu (transaksi, anggaran, saldo, portofolio)
-  disimpan hanya di perangkatmu sendiri dan <strong>tidak pernah dikirim ke server kami
-  atau siapa pun</strong>. Struk yang kamu pindai dan suara yang kamu pakai untuk mencatat
+  disimpan di perangkatmu sendiri dan <strong>tidak pernah dikirim ke server kami</strong>.
+  Satu-satunya jalan catatan itu keluar dari perangkat lewat aplikasi adalah
+  <strong>Vault Google Drive</strong> yang kamu nyalakan sendiri: cadangannya dienkripsi di
+  perangkatmu lebih dulu, lalu disimpan di Google Drive milikmu, dan kami tidak bisa
+  membacanya (§5). Struk yang kamu pindai dan suara yang kamu pakai untuk mencatat
   juga diproses di perangkat. Kami tidak menampilkan iklan dan tidak menjual data kepada
   siapa pun.
 </div>
@@ -249,7 +254,9 @@ html{scroll-behavior:smooth}
   <li>Foto yang kamu lampirkan ke catatan, termasuk foto struk yang kamu pindai.</li>
   <li>Suaramu saat mencatat dengan suara. Rekamannya tidak disimpan; yang dipakai hanya
       teks hasil pengenalannya, untuk mengisi form pencatatan.</li>
-  <li>Berkas cadangan (<em>backup</em>) beserta kata sandinya.</li>
+  <li>Kata sandi berkas cadangan dan <em>passphrase</em> vault. Berkas cadangan sendiri hanya
+      keluar dari perangkat bila kamu mengirimnya sendiri, atau lewat Vault Google Drive (§5)
+      dalam bentuk terenkripsi.</li>
   <li>PIN aplikasi dan data biometrik. Biometrik diverifikasi oleh sistem operasi;
       aplikasi hanya menerima jawaban berhasil/gagal.</li>
   <li>Lokasi, kontak, kalender, SMS, dan riwayat panggilan. Aplikasi tidak pernah meminta
@@ -316,7 +323,43 @@ html{scroll-behavior:smooth}
 <p><strong>Tidak ada satu pun angka keuangan yang ikut.</strong> Yang tersimpan di sana
    hanya identitas akun, persetujuan, status pembelian, dan hitungan pemakaian di atas.</p>
 
-<h2 id="id-5">5. Pembelian</h2>
+<h2 id="id-vault">5. Vault Google Drive (opsional)</h2>
+<p>Vault menyimpan cadanganmu di <strong>Google Drive milikmu sendiri</strong>, supaya bisa
+   dipulihkan di HP lain. Fitur ini mati sampai kamu menyalakannya dari halaman
+   <em>Backup &amp; Restore</em>, dan cadangan hanya diunggah saat kamu menekan
+   <em>Backup sekarang</em>.</p>
+<ul>
+  <li><strong>Apa yang diunggah:</strong> salinan cadangan yang sama isinya dengan berkas
+      cadangan biasa (seluruh catatan keuangan dan foto lampiran dalam batas ukurannya),
+      ditambah ID perangkat acak yang dibuat aplikasi untuk membedakan cadangan dari
+      tiap HP. Semuanya <strong>dienkripsi di perangkatmu sebelum diunggah</strong>. Kuncinya
+      diturunkan dari <em>passphrase</em> vault memakai Argon2id, tiap berkas punya
+      kuncinya sendiri, dan nama berkas di Drive disamarkan.</li>
+  <li><strong>Ke mana:</strong> folder <em>Nodira Vault</em> di Google Drive akunmu. Tidak ke
+      server kami.</li>
+  <li><strong>Izin yang diminta:</strong> <code>drive.file</code>. Dengan izin ini aplikasi
+      hanya bisa melihat dan mengubah berkas yang ia buat sendiri, <strong>tidak bisa
+      membaca berkas lain</strong> di Google Drive-mu.</li>
+  <li><strong>Siapa yang bisa membacanya:</strong> tanpa <em>passphrase</em>, tidak ada. Google
+      hanya menyimpan data terenkripsi, dan kami tidak menyimpan <em>passphrase</em>-mu
+      serta tidak punya cara memulihkannya. Bila lupa, isi vault tidak bisa dibuka oleh
+      siapa pun, termasuk kami.</li>
+  <li><strong>Menghapus &amp; mencabut:</strong> hapus folder <em>Nodira Vault</em> dari Google
+      Drive kapan saja. Akses aplikasi ke Drive dapat dicabut di
+      <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">pengaturan
+      akun Google</a>.</li>
+</ul>
+<div class="box">
+  <strong>Penggunaan data dari Google API:</strong> data yang diperoleh lewat Google Drive API
+  hanya dipakai untuk menyimpan dan memulihkan cadanganmu atas permintaanmu. Data itu tidak
+  dipindahkan ke pihak lain, tidak dipakai untuk iklan, dan tidak dibaca oleh manusia.
+  Penggunaan dan pemindahan informasi yang diterima dari Google API oleh Nodira mematuhi
+  <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Kebijakan
+  Data Pengguna Layanan Google API</a>, termasuk persyaratan Penggunaan Terbatas
+  (<em>Limited Use</em>).
+</div>
+
+<h2 id="id-5">6. Pembelian</h2>
 <p>Pembelian diproses sepenuhnya oleh <strong>Google Play Billing</strong>. Kami tidak
    pernah menerima, melihat, atau menyimpan nomor kartu maupun data pembayaranmu.
    Aplikasi hanya menerima tanda dari Google Play bahwa sebuah pembelian sah.</p>
@@ -325,14 +368,14 @@ html{scroll-behavior:smooth}
    pembelian terikat ke akun yang membelinya dan tidak bisa diklaim akun lain di perangkat
    yang sama.</p>
 
-<h2 id="id-6">6. Iklan &amp; analitik</h2>
+<h2 id="id-6">7. Iklan &amp; analitik</h2>
 <p>Nodira <strong>tidak memuat iklan</strong> dan <strong>tidak memakai SDK analitik
    maupun pelaporan kerusakan</strong> (tidak ada Google Analytics, Firebase Analytics,
    Crashlytics, atau sejenisnya). Satu-satunya data pemakaian yang kami simpan adalah
    jumlah sesi dan tanggal aktif untuk akun yang masuk (§4). Kami tidak merekam apa yang
    kamu lakukan di dalam aplikasi. Metrik diagnostik ML Kit dijelaskan di §3.</p>
 
-<h2 id="id-7">7. Berbagi data dengan pihak ketiga</h2>
+<h2 id="id-7">8. Berbagi data dengan pihak ketiga</h2>
 <p>Kami <strong>tidak menjual dan tidak membagikan</strong> datamu kepada pihak ketiga
    untuk tujuan pemasaran. Penyedia layanan yang terlibat hanya:</p>
 <ul>
@@ -341,10 +384,12 @@ html{scroll-behavior:smooth}
   <li><strong>Google Play Billing</strong>: memproses pembelian.</li>
   <li><strong>Google ML Kit</strong>: membaca struk di perangkat; metrik diagnostiknya
       dijelaskan di §3.</li>
+  <li><strong>Google Drive</strong>: hanya bila kamu menyalakan vault, menyimpan cadangan
+      terenkripsi di akun Drive-mu sendiri (§5).</li>
 </ul>
-<p>Ketiganya tunduk pada <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Kebijakan Privasi Google</a>.</p>
+<p>Semuanya tunduk pada <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Kebijakan Privasi Google</a>.</p>
 
-<h2 id="id-8">8. Keamanan</h2>
+<h2 id="id-8">9. Keamanan</h2>
 <ul>
   <li>Data di perangkat dapat dikunci dengan <strong>PIN dan biometrik</strong>.</li>
   <li>Berkas cadangan, termasuk foto yang dilampirkan ke catatan, dienkripsi dengan
@@ -352,17 +397,22 @@ html{scroll-behavior:smooth}
       <strong>PBKDF2 200.000 iterasi</strong>.
       <strong>Kami tidak menyimpan kata sandi itu dan tidak memiliki cara memulihkannya.</strong>
       Jika kamu lupa, berkas cadangan itu tidak dapat dibuka oleh siapa pun, termasuk kami.</li>
+  <li>Cadangan di Vault Google Drive dienkripsi di perangkat sebelum diunggah, dengan kunci
+      dari <em>passphrase</em> vault memakai <strong>Argon2id</strong> (§5).</li>
   <li>Cadangan otomatis Android ke Google Drive <strong>dimatikan</strong>, jadi basis data
       aplikasi tidak disalin ke cloud di luar kendalimu.</li>
   <li>Data yang dikirim ke Firebase berjalan melalui koneksi terenkripsi (HTTPS/TLS).</li>
 </ul>
 
-<h2 id="id-9">9. Penyimpanan &amp; penghapusan data</h2>
+<h2 id="id-9">10. Penyimpanan &amp; penghapusan data</h2>
 <ul>
   <li><strong>Data di perangkat</strong> tersimpan sampai kamu menghapusnya. Aplikasi
       menyediakan <em>Hapus semua data</em> di Pengaturan, yang mengosongkan seluruh basis
       data lokal beserta foto lampiran. Menghapus (<em>uninstall</em>) aplikasi juga
       menghapusnya, kecuali berkas cadangan yang sudah kamu simpan sendiri.</li>
+  <li><strong>Cadangan di Vault Google Drive</strong> tersimpan di Drive-mu sampai kamu
+      menghapus folder <em>Nodira Vault</em>. Menghapus akun Nodira tidak menghapusnya,
+      sebab folder itu milikmu dan kami tidak punya akses ke sana.</li>
   <li><strong>Data akun di Firebase</strong> tersimpan selama akunmu ada. Kamu berhak
       meminta penghapusannya kapan saja; permintaan itu juga menghapus catatan klaim
       pembelian dan hitungan pemakaian.</li>
@@ -374,29 +424,33 @@ html{scroll-behavior:smooth}
   Permintaan diproses dalam <strong>30 hari</strong>.
 </div>
 
-<h2 id="id-10">10. Hak kamu</h2>
+<h2 id="id-10">11. Hak kamu</h2>
 <p>Kamu berhak mengakses, memperbaiki, dan menghapus data akunmu, serta menarik
    persetujuan yang pernah kamu berikan. Pilihan persetujuan (notifikasi, masukan, email)
    dapat diubah kapan saja dari <em>Pengaturan → Privasi</em> di dalam aplikasi, bahkan
    saat sedang luring. Izin mikrofon dapat dicabut kapan saja dari pengaturan Android.
    Untuk permintaan lain, hubungi kami lewat email di atas.</p>
 
-<h2 id="id-11">11. Anak-anak</h2>
+<h2 id="id-11">12. Anak-anak</h2>
 <p>Nodira ditujukan untuk pengguna berusia <strong>18 tahun ke atas</strong> dan tidak
    dirancang untuk anak-anak. Kami tidak dengan sengaja mengumpulkan data dari anak
    di bawah 13 tahun. Bila kami mengetahui hal itu terjadi, datanya akan kami hapus.</p>
 
-<h2 id="id-12">12. Perubahan kebijakan</h2>
+<h2 id="id-12">13. Perubahan kebijakan</h2>
 <p>Bila kebijakan ini berubah secara berarti, versinya dinaikkan dan aplikasi akan
    menanyakan persetujuanmu kembali saat kamu membukanya. Tanggal berlaku di atas
    selalu menunjukkan versi terkini.</p>
+<p><strong>Perubahan 2.2 (25 September 2026):</strong> menambahkan Vault Google Drive
+   opsional (§5): cadangan terenkripsi di perangkat, disimpan di Google Drive milikmu dengan
+   izin <code>drive.file</code>; menyesuaikan ringkasan serta bagian 1, 8, 9, dan 10. Nomor
+   bagian sesudah §4 bergeser satu.</p>
 <p><strong>Perubahan 2.1 (24 September 2026):</strong> menambahkan pindai struk &amp; catat
    dengan suara (§3), izin mikrofon, klaim pembelian per akun, dan penanda akun yang
    disamarkan untuk Google Play; melengkapi daftar data akun dengan ID perangkat acak,
    jumlah sesi, dan tanggal aktif yang sebelumnya sudah dikirim tetapi belum tercantum
    di sini.</p>
 
-<h2 id="id-13">13. Kontak</h2>
+<h2 id="id-13">14. Kontak</h2>
 <p>Pertanyaan atau permintaan terkait privasi:
    <a href="mailto:arileif.soft@gmail.com">arileif.soft@gmail.com</a></p>
 </article>
@@ -404,14 +458,17 @@ html{scroll-behavior:smooth}
 <article data-lang="en" lang="en">
   <div class="doc-head">
   <h1>Privacy Policy — Nodira</h1>
-  <p class="meta">Effective: 24 September 2026 · Policy version: 2.1 · App: Nodira
+  <p class="meta">Effective: 25 September 2026 · Policy version: 2.2 · App: Nodira
    (<code>com.nodira.app</code>) · Contact:
    <a href="mailto:arileif.soft@gmail.com">arileif.soft@gmail.com</a></p>
   </div>
 <div class="box">
   <strong>In short:</strong> Nodira is an offline-first personal finance tracker. All of
   your financial records (transactions, budgets, balances, portfolio) are stored
-  <strong>only on your own device and are never transmitted to us or anyone else</strong>.
+  on your own device and <strong>are never transmitted to our servers</strong>. The only way
+  the app sends them anywhere is the <strong>Google Drive Vault</strong>, which you turn on
+  yourself: the backup is encrypted on your device first, then stored in your own Google
+  Drive, and we cannot read it (§5).
   Receipts you scan and the voice you use to record are processed on the device too. We
   serve no ads and sell data to no one.
 </div>
@@ -421,7 +478,7 @@ html{scroll-behavior:smooth}
    categories, budgets, balances, ledger names, cash composition, investment portfolio,
    debts and receivables); photos you attach to records, including scanned receipts; your
    voice when recording by voice (the audio is not stored, only the recognised text is
-   used to fill the entry form); backup files and their passwords; your app PIN and
+   used to fill the entry form); backup passwords and your vault passphrase (backup files themselves leave the device only when you send them yourself, or in encrypted form through the Google Drive Vault, §5); your app PIN and
    biometric data (biometrics are verified by the operating system, and the app only
    receives a success/failure result); location, contacts, calendar, SMS and call history
    (the app never requests these permissions). Your photo library is not read either: the
@@ -486,7 +543,40 @@ html{scroll-behavior:smooth}
 <p><strong>No financial figures are included.</strong> Only account identity, consent,
    purchase status, and the usage counts above are stored there.</p>
 
-<h2 id="en-5">5. Purchases</h2>
+<h2 id="en-vault">5. Google Drive Vault (optional)</h2>
+<p>The vault stores your backups in <strong>your own Google Drive</strong> so you can restore
+   them on another phone. It stays off until you turn it on from the <em>Backup &amp;
+   Restore</em> page, and a backup is uploaded only when you tap <em>Back up now</em>.</p>
+<ul>
+  <li><strong>What is uploaded:</strong> a backup with the same content as a regular backup
+      file (all financial records and attached photos within its size limit), plus a random
+      device ID the app creates to tell backups from different phones apart. Everything is
+      <strong>encrypted on your device before upload</strong>. The key is derived from your
+      vault passphrase using Argon2id, each file has its own key, and file names in Drive
+      are obfuscated.</li>
+  <li><strong>Where it goes:</strong> a <em>Nodira Vault</em> folder in your Google Drive. Not
+      to our servers.</li>
+  <li><strong>Permission requested:</strong> <code>drive.file</code>. With this scope the app
+      can only see and change files it created itself; it <strong>cannot read any other
+      file</strong> in your Google Drive.</li>
+  <li><strong>Who can read it:</strong> nobody without the passphrase. Google only stores
+      encrypted data, and we do not store your passphrase and have no way to recover it. If
+      you forget it, the vault cannot be opened by anyone, including us.</li>
+  <li><strong>Deleting &amp; revoking:</strong> delete the <em>Nodira Vault</em> folder from Google
+      Drive at any time. The app's Drive access can be revoked in your
+      <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">Google
+      account settings</a>.</li>
+</ul>
+<div class="box">
+  <strong>Use of data from Google APIs:</strong> data obtained through the Google Drive API is
+  used only to store and restore your backups at your request. It is not transferred to
+  others, not used for advertising, and not read by humans. Nodira's use and transfer of
+  information received from Google APIs adheres to the
+  <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google
+  API Services User Data Policy</a>, including the Limited Use requirements.
+</div>
+
+<h2 id="en-5">6. Purchases</h2>
 <p>Purchases are handled entirely by <strong>Google Play Billing</strong>. We never
    receive, see, or store your card or payment details; the app only receives a signed
    confirmation from Google Play that a purchase is valid.</p>
@@ -495,37 +585,42 @@ html{scroll-behavior:smooth}
    so the purchase is tied to the account that bought it and cannot be claimed by another
    account on the same device.</p>
 
-<h2 id="en-6">6. Ads &amp; analytics</h2>
+<h2 id="en-6">7. Ads &amp; analytics</h2>
 <p>Nodira contains <strong>no advertising</strong> and uses <strong>no analytics or crash
    reporting SDKs</strong> (no Google Analytics, Firebase Analytics, Crashlytics, or
    similar). The only usage data we keep is the session count and active dates for
    signed-in accounts (§4). We do not record what you do inside the app. ML Kit's
    diagnostic metrics are described in §3.</p>
 
-<h2 id="en-7">7. Sharing with third parties</h2>
+<h2 id="en-7">8. Sharing with third parties</h2>
 <p>We <strong>do not sell or share</strong> your data with third parties for marketing.
    The only service providers involved are <strong>Google Firebase (Authentication and
    Firestore)</strong>, which stores the data in §4 as a processor on our behalf;
    <strong>Google Play Billing</strong>, which processes purchases; and <strong>Google ML
    Kit</strong>, which reads receipts on the device (its diagnostic metrics are described
-   in §3). All three are governed by the
+   in §3). If you turn on the vault, <strong>Google Drive</strong> stores your encrypted
+   backups in your own Drive account (§5). All of them are governed by the
    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google
    Privacy Policy</a>.</p>
 
-<h2 id="en-8">8. Security</h2>
+<h2 id="en-8">9. Security</h2>
 <p>On-device data can be locked with a <strong>PIN and biometrics</strong>. Backup files,
    including photos attached to records, are encrypted with <strong>AES-256-GCM</strong>,
    with the key derived from your password using <strong>PBKDF2 at 200,000
    iterations</strong>. <strong>We do not store that password and have no way to recover
    it</strong>; if you forget it, that backup file cannot be opened by anyone, including
-   us. Android's automatic backup to Google Drive is <strong>disabled</strong>, so the
+   us. Vault backups are encrypted on the device before upload, with a key derived from your
+   vault passphrase using <strong>Argon2id</strong> (§5). Android's automatic backup to
+   Google Drive is <strong>disabled</strong>, so the
    app's database is never copied to the cloud outside your control. Data sent to
    Firebase travels over encrypted connections (HTTPS/TLS).</p>
 
-<h2 id="en-9">9. Retention &amp; deletion</h2>
+<h2 id="en-9">10. Retention &amp; deletion</h2>
 <p>On-device data is kept until you delete it; the app provides <em>Delete all data</em> in
    Settings (which also removes attached photos), and uninstalling the app also removes it
-   (except backup files you saved yourself). Account data in Firebase is kept for as long
+   (except backup files you saved yourself). Vault backups stay in your Google Drive until
+   you delete the <em>Nodira Vault</em> folder; deleting your Nodira account does not remove
+   them, because that folder is yours and we have no access to it. Account data in Firebase is kept for as long
    as your account exists, and you may request its deletion at any time; that request
    also deletes the purchase claim record and usage counts.</p>
 <div class="box">
@@ -535,29 +630,33 @@ html{scroll-behavior:smooth}
   Requests are processed within <strong>30 days</strong>.
 </div>
 
-<h2 id="en-10">10. Your rights</h2>
+<h2 id="en-10">11. Your rights</h2>
 <p>You may access, correct, and delete your account data, and withdraw any consent you
    have given. Consent choices (notifications, feedback, email) can be changed at any
    time from <em>Settings → Privacy</em> inside the app, even while offline. Microphone
    access can be revoked at any time in Android settings. For other requests, contact us
    at the email above.</p>
 
-<h2 id="en-11">11. Children</h2>
+<h2 id="en-11">12. Children</h2>
 <p>Nodira is intended for users aged <strong>18 and over</strong> and is not directed to
    children. We do not knowingly collect data from children under 13; if we learn that we
    have, we will delete it.</p>
 
-<h2 id="en-12">12. Changes</h2>
+<h2 id="en-12">13. Changes</h2>
 <p>If this policy changes materially, its version is incremented and the app will ask for
    your consent again when you next open it. The effective date above always reflects the
    current version.</p>
+<p><strong>Changes in 2.2 (25 September 2026):</strong> added the optional Google Drive
+   Vault (§5): backups encrypted on the device and stored in your own Google Drive with the
+   <code>drive.file</code> scope; updated the summary and sections 1, 8, 9, and 10. Sections
+   after §4 are renumbered by one.</p>
 <p><strong>Changes in 2.1 (24 September 2026):</strong> added receipt scanning and voice
    entry (§3), the microphone permission, per-account purchase claims, and the obfuscated
    account identifier sent to Google Play; completed the account data list with the random
    device ID, session count, and active dates, which were already being sent but were not
    listed here.</p>
 
-<h2 id="en-13">13. Contact</h2>
+<h2 id="en-13">14. Contact</h2>
 <p><a href="mailto:arileif.soft@gmail.com">arileif.soft@gmail.com</a></p>
 </article>
 
