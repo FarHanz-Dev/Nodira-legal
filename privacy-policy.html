@@ -230,7 +230,7 @@ html{scroll-behavior:smooth}
 <article data-lang="id" lang="id">
   <div class="doc-head">
   <h1>Kebijakan Privasi — Nodira</h1>
-  <p class="meta">Berlaku sejak: 25 September 2026 · Versi kebijakan: 2.2</p>
+  <p class="meta">Berlaku sejak: 25 September 2026 · Versi kebijakan: 2.3</p>
   <p class="meta">Aplikasi: Nodira (<code>com.nodira.app</code>) · Kontak: <a href="mailto:arileif.soft@gmail.com">arileif.soft@gmail.com</a></p>
   </div>
 <p class="lang"><a href="#english">Read in English ↓</a></p>
@@ -326,8 +326,9 @@ html{scroll-behavior:smooth}
 <h2 id="id-vault">5. Vault Google Drive (opsional)</h2>
 <p>Vault menyimpan cadanganmu di <strong>Google Drive milikmu sendiri</strong>, supaya bisa
    dipulihkan di HP lain. Fitur ini mati sampai kamu menyalakannya dari halaman
-   <em>Backup &amp; Restore</em>, dan cadangan hanya diunggah saat kamu menekan
-   <em>Backup sekarang</em>.</p>
+   <em>Backup &amp; Restore</em>. Cadangan diunggah saat kamu menekan
+   <em>Backup sekarang</em>, dan, bila kamu menyalakan <strong>Sinkron otomatis</strong>,
+   juga secara otomatis setiap kali ada transaksi baru dan perangkat sedang online.</p>
 <ul>
   <li><strong>Apa yang diunggah:</strong> salinan cadangan yang sama isinya dengan berkas
       cadangan biasa (seluruh catatan keuangan dan foto lampiran dalam batas ukurannya),
@@ -340,11 +341,18 @@ html{scroll-behavior:smooth}
   <li><strong>Izin yang diminta:</strong> <code>drive.file</code>. Dengan izin ini aplikasi
       hanya bisa melihat dan mengubah berkas yang ia buat sendiri, <strong>tidak bisa
       membaca berkas lain</strong> di Google Drive-mu.</li>
+  <li><strong>Sinkron otomatis (opsional):</strong> agar tidak perlu memasukkan
+      <em>passphrase</em> tiap membuka aplikasi, kunci vault disimpan di penyimpanan aman
+      perangkat ini (Android Keystore), terikat pada akun yang sedang masuk. Kunci itu
+      <strong>tidak pernah dikirim</strong> ke mana pun; HP lain tetap harus memakai
+      <em>passphrase</em>. Kunci dihapus dari perangkat saat kamu mematikan sinkron
+      otomatis, menekan <em>Kunci</em>, keluar dari akun, atau menghapus semua data.</li>
   <li><strong>Siapa yang bisa membacanya:</strong> tanpa <em>passphrase</em>, tidak ada. Google
       hanya menyimpan data terenkripsi, dan kami tidak menyimpan <em>passphrase</em>-mu
       serta tidak punya cara memulihkannya. Bila lupa, isi vault tidak bisa dibuka oleh
       siapa pun, termasuk kami.</li>
-  <li><strong>Menghapus &amp; mencabut:</strong> hapus folder <em>Nodira Vault</em> dari Google
+  <li><strong>Menghapus &amp; mencabut:</strong> tekan <em>Reset vault</em> di aplikasi untuk
+      menghapus seluruh isi vault, atau hapus folder <em>Nodira Vault</em> dari Google
       Drive kapan saja. Akses aplikasi ke Drive dapat dicabut di
       <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">pengaturan
       akun Google</a>.</li>
@@ -411,7 +419,8 @@ html{scroll-behavior:smooth}
       data lokal beserta foto lampiran. Menghapus (<em>uninstall</em>) aplikasi juga
       menghapusnya, kecuali berkas cadangan yang sudah kamu simpan sendiri.</li>
   <li><strong>Cadangan di Vault Google Drive</strong> tersimpan di Drive-mu sampai kamu
-      menghapus folder <em>Nodira Vault</em>. Menghapus akun Nodira tidak menghapusnya,
+      menekan <em>Reset vault</em> atau menghapus folder <em>Nodira Vault</em>. Menghapus
+      akun Nodira tidak menghapusnya,
       sebab folder itu milikmu dan kami tidak punya akses ke sana.</li>
   <li><strong>Data akun di Firebase</strong> tersimpan selama akunmu ada. Kamu berhak
       meminta penghapusannya kapan saja; permintaan itu juga menghapus catatan klaim
@@ -440,6 +449,10 @@ html{scroll-behavior:smooth}
 <p>Bila kebijakan ini berubah secara berarti, versinya dinaikkan dan aplikasi akan
    menanyakan persetujuanmu kembali saat kamu membukanya. Tanggal berlaku di atas
    selalu menunjukkan versi terkini.</p>
+<p><strong>Perubahan 2.3 (25 September 2026):</strong> vault kini bisa mengunggah cadangan
+   secara otomatis tiap ada transaksi baru bila kamu menyalakan <em>Sinkron otomatis</em>;
+   untuk itu kunci vault disimpan di penyimpanan aman perangkat (§5). Menambahkan
+   <em>Reset vault</em> di aplikasi sebagai cara menghapus isi vault (§5, §10).</p>
 <p><strong>Perubahan 2.2 (25 September 2026):</strong> menambahkan Vault Google Drive
    opsional (§5): cadangan terenkripsi di perangkat, disimpan di Google Drive milikmu dengan
    izin <code>drive.file</code>; menyesuaikan ringkasan serta bagian 1, 8, 9, dan 10. Nomor
@@ -458,7 +471,7 @@ html{scroll-behavior:smooth}
 <article data-lang="en" lang="en">
   <div class="doc-head">
   <h1>Privacy Policy — Nodira</h1>
-  <p class="meta">Effective: 25 September 2026 · Policy version: 2.2 · App: Nodira
+  <p class="meta">Effective: 25 September 2026 · Policy version: 2.3 · App: Nodira
    (<code>com.nodira.app</code>) · Contact:
    <a href="mailto:arileif.soft@gmail.com">arileif.soft@gmail.com</a></p>
   </div>
@@ -546,7 +559,9 @@ html{scroll-behavior:smooth}
 <h2 id="en-vault">5. Google Drive Vault (optional)</h2>
 <p>The vault stores your backups in <strong>your own Google Drive</strong> so you can restore
    them on another phone. It stays off until you turn it on from the <em>Backup &amp;
-   Restore</em> page, and a backup is uploaded only when you tap <em>Back up now</em>.</p>
+   Restore</em> page. A backup is uploaded when you tap <em>Back up now</em> and, if you turn
+   on <strong>Auto sync</strong>, also automatically whenever a new transaction is recorded
+   and the device is online.</p>
 <ul>
   <li><strong>What is uploaded:</strong> a backup with the same content as a regular backup
       file (all financial records and attached photos within its size limit), plus a random
@@ -559,11 +574,17 @@ html{scroll-behavior:smooth}
   <li><strong>Permission requested:</strong> <code>drive.file</code>. With this scope the app
       can only see and change files it created itself; it <strong>cannot read any other
       file</strong> in your Google Drive.</li>
+  <li><strong>Auto sync (optional):</strong> so you are not asked for the passphrase every
+      time you open the app, the vault key is kept in this device's secure storage (Android
+      Keystore), tied to the signed-in account. That key is <strong>never sent</strong>
+      anywhere; other phones still need the passphrase. It is removed from the device when
+      you turn auto sync off, tap <em>Lock</em>, sign out, or delete all data.</li>
   <li><strong>Who can read it:</strong> nobody without the passphrase. Google only stores
       encrypted data, and we do not store your passphrase and have no way to recover it. If
       you forget it, the vault cannot be opened by anyone, including us.</li>
-  <li><strong>Deleting &amp; revoking:</strong> delete the <em>Nodira Vault</em> folder from Google
-      Drive at any time. The app's Drive access can be revoked in your
+  <li><strong>Deleting &amp; revoking:</strong> tap <em>Reset vault</em> in the app to delete
+      everything in the vault, or delete the <em>Nodira Vault</em> folder from Google Drive at
+      any time. The app's Drive access can be revoked in your
       <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">Google
       account settings</a>.</li>
 </ul>
@@ -619,7 +640,8 @@ html{scroll-behavior:smooth}
 <p>On-device data is kept until you delete it; the app provides <em>Delete all data</em> in
    Settings (which also removes attached photos), and uninstalling the app also removes it
    (except backup files you saved yourself). Vault backups stay in your Google Drive until
-   you delete the <em>Nodira Vault</em> folder; deleting your Nodira account does not remove
+   you tap <em>Reset vault</em> or delete the <em>Nodira Vault</em> folder; deleting your
+   Nodira account does not remove
    them, because that folder is yours and we have no access to it. Account data in Firebase is kept for as long
    as your account exists, and you may request its deletion at any time; that request
    also deletes the purchase claim record and usage counts.</p>
@@ -646,6 +668,10 @@ html{scroll-behavior:smooth}
 <p>If this policy changes materially, its version is incremented and the app will ask for
    your consent again when you next open it. The effective date above always reflects the
    current version.</p>
+<p><strong>Changes in 2.3 (25 September 2026):</strong> the vault can now upload backups
+   automatically whenever a new transaction is recorded, if you turn on <em>Auto sync</em>;
+   for that, the vault key is kept in the device's secure storage (§5). Added <em>Reset
+   vault</em> in the app as a way to delete the vault's contents (§5, §10).</p>
 <p><strong>Changes in 2.2 (25 September 2026):</strong> added the optional Google Drive
    Vault (§5): backups encrypted on the device and stored in your own Google Drive with the
    <code>drive.file</code> scope; updated the summary and sections 1, 8, 9, and 10. Sections
